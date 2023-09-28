@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cLoThSHoP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ecom.css"/>         
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="pgname">
+                cLoThSHoP
+            </div>
+            <div class="search">
+                <form action="action" >
+                    <input type="search" id="search" name="search" placeholder="Search">
+                </form>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li class="dropdown">
+                        <a  href="#">PRODUCTS</a>
+                        <div class="dropdown-content">
+                            <a href="#">WOMEN</a>
+                            <a href="#">MEN</a>
+                            <a href="#">ACCESSORIES</a>
+                        </div>
+                    </li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">ABOUT US</a></li>                    
+                </ul>
+            </div>
+        </div>
+        <div class="slideshow">
+            <div>
+                <img  class="slide fade" src="image1.jpg" alt="img1"/>
+                <img  class="slide fade" src="image2.jpg" alt="img2"/>
+                <img  class="slide fade" src="image3.jpg" alt="img3"/>
+                <img  class="slide fade" src="image4.jpg" alt="img4"/>
+                <img  class="slide fade" src="image5.jpg" alt="img5"/>
+            </div>
+            <div>
+                <button class="rightarr" type="button" onclick="plusSlides(1)">&gt;|</button>
+                <button class="leftarr" type="button" onclick="plusSlides(-1)">|&lt;</button>
+            </div>
+            <div class="fixdots">
+                <button class="dot"  onclick="currentSlide(1)"></button>
+                <button class="dot"  onclick="currentSlide(2)"></button>
+                <button class="dot"  onclick="currentSlide(3)"></button>
+                <button class="dot"  onclick="currentSlide(4)"></button>
+                <button class="dot"  onclick="currentSlide(5)"></button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="socialMedia">
+                <div class="sname">BE IN TOUCH WITH US:</div>
+                <div class="sicon">
+                    <a href="#"><img src="icons8-facebook-32.png" alt="facebook"/></a>
+                    <a href="#"><img src="icons8-twitterx-32.png" alt="twitter"/></a>
+                    <a href="#"><img src="icons8-instagram-32.png" alt="instagram"/></a>
+                    <a href="#"><img src="icons8-pinterest-32.png" alt="pinterest"/></a>
+                    <a href="#"><img src="icons8-whatsapp-32.png" alt="whatsapp"/></a>
+                </div>
+            </div>
+            <div class="fbody">
+                <div class="fmenu">
+                    <ul>
+                        <li class="fheading"></li>
+                        <li><a href="#">Home</a></li>                                  
+                    </ul>
+                </div>
+                <div class="fmenu">
+                    <ul>
+                        <li class="fheading">HELP & SUPPORT</li>
+                        <li><a href="#">Shipping info</a></li>                    
+                        <li><a href="#">Return/Exchange Policy</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Promotional info</a></li>                    
+                    </ul>
+                </div>
+                <div class="fmenu">
+                    <ul>
+                        <li class="fheading">CUSTOMER CARE</li>
+                        <li><a href="#">Contact us</a></li>                                          
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <script src="ecom.js"></script>  
+    </body>
+</html>

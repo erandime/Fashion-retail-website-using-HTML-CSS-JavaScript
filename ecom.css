@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    font-family: "Courier New", monospace;
+}
+body {
+    overflow-y: auto;
+}
+div.topnav {
+    width:100%;
+    height:15%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: black;
+}
+div.pgname {
+    position: absolute;
+    bottom:0;
+    left:10px;
+    color:white;
+    font-size: 60px;
+}
+div.search {
+    position:absolute;
+    bottom:10px;
+    left:400px;
+}
+div.menu {
+    position:absolute;
+    bottom:0px;
+    left:800px;
+}
+.search input[type=search] {/* type=text?*/
+    height: 30px;
+    width: 300px;
+    border:2px solid #ccc;
+    font-size: 15px;
+    background-image: url('search.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.menu li{
+    list-style-type: none;
+    font-size: 20px;
+    display: inline-block;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    display: block;
+}
+.menu a:hover {
+    color:lightsteelblue;
+}
+.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;/**/
+    padding: 3px;
+}
+.menu .dropdown:hover .dropdown-content{
+    display: block;
+}
+
+div.slideshow {
+    position: fixed;
+    top:100px;
+    left:0px;
+    width:100%;
+    z-index: -1;
+    height: 55%;
+    margin-top: 0px;
+}
+img.slide {
+    position:absolute;
+    left:0px;
+    top:0;
+    height: 98%;
+    width:100%;
+    z-index: -1;
+    transition: 0.6s ease;
+}
+button.rightarr, button.leftarr {
+    position: absolute;
+    cursor: pointer;
+    top:50%;
+    height:40px;
+    width:40px;
+    color: white;
+    padding: 5px;
+    right:5px;
+    background-color: rgba(0,0,0,0);
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-style: hidden;
+}
+button.leftarr {
+    left:5px;
+}
+button.rightarr:hover, button.leftarr:hover {
+    color:lightsteelblue;
+}
+button.dot:hover, button#active{
+    background-color:lightsteelblue;
+}
+div.fixdots{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    height: 2%;
+}
+button.dot {
+    cursor: pointer;
+    height:15px;
+    width:10px;
+    border-color: lightsteelblue;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+img.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+div.footer {
+    width:100%;
+    height:30%;
+    position: fixed;
+    bottom: 0;
+    left:0;
+}
+div.socialMedia {
+    width:100%;
+    height:25%;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: lightsteelblue;margin: 0;
+}
+div.sname {
+    position: absolute;
+    top:30%;
+    left:10%;
+    color:black;
+    font-size: 20px;
+}
+.sicon {
+    position: absolute;
+    top:0px;
+    right:20%;
+}
+.sicon img {
+    transition: width 2s;
+    margin: 10px;
+}
+.sicon img:hover {
+    width: 40px;
+}
+div.fbody{
+    width:100%;
+    height:75%;
+    position: absolute;
+    top: 25%;
+    left:0;
+    background-color: black;margin: 0;
+}
+div.fmenu {
+    float: left;
+    margin: 20px 150px;
+}
+.fmenu li{
+    list-style-type: none;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    line-height: 20px;text-align: left;
+}
+.fmenu a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    display: block;
+}
+.fmenu a:hover {
+    color:lightsteelblue;
+}
+li.fheading {
+    color: gray;
+}
