@@ -48,7 +48,7 @@ function showSlidesAuto() {
     }
     slides[autoIndex - 1].style.display = "block";
     dots[autoIndex - 1].id = "active";
-    setTimeout(showSlidesAuto, 3000); // Change image every 3 seconds
+    setTimeout(showSlidesAuto, 4000); // Change image every 3 seconds
 }
 /* Tried another method :)
  

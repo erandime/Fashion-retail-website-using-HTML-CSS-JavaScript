@@ -4,7 +4,8 @@
         <title>cLoThSHoP</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="ecom.css"/>         
+        <link rel="stylesheet" href="ecom.css"/>   
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body>
         <div class="topnav">
@@ -35,17 +36,17 @@
         </div>
         <div class="slideshow">
             <div>
-                <img  class="slide fade" src="image1.jpg" alt="img1"/>
-                <img  class="slide fade" src="image2.jpg" alt="img2"/>
-                <img  class="slide fade" src="image3.jpg" alt="img3"/>
-                <img  class="slide fade" src="image4.jpg" alt="img4"/>
-                <img  class="slide fade" src="image5.jpg" alt="img5"/>
+                <img  class="slide fade" src="images/image1.jpg" alt="img1"/>
+                <img  class="slide fade" src="images/image2.jpg" alt="img2"/>
+                <img  class="slide fade" src="images/image3.jpg" alt="img3"/>
+                <img  class="slide fade" src="images/image4.jpg" alt="img4"/>
+                <img  class="slide fade" src="images/image5.jpg" alt="img5"/>
             </div>
             <div>
                 <button class="rightarr" type="button" onclick="plusSlides(1)">&gt;|</button>
                 <button class="leftarr" type="button" onclick="plusSlides(-1)">|&lt;</button>
             </div>
-            <div class="fixdots">
+            <div>
                 <button class="dot"  onclick="currentSlide(1)"></button>
                 <button class="dot"  onclick="currentSlide(2)"></button>
                 <button class="dot"  onclick="currentSlide(3)"></button>
@@ -53,15 +54,41 @@
                 <button class="dot"  onclick="currentSlide(5)"></button>
             </div>
         </div>
+        <div class="imgGallery">
+            <div class="item1">
+                <img src="images/item1.jpg" alt="item1"/>
+                <div class="itemText">DRESSES</div>                    
+            </div>
+            <div class="item2">
+                <img src="images/item2.jpg" alt="item2"/>
+                <div class="itemText">DENIM</div>
+
+            </div>
+            <div class="item3">
+                <img src="images/item3.jpg" alt="item3"/>
+                <div class="itemText">JUMPSUITS</div>
+
+            </div> 
+            <div class="item4">
+                <img src="images/item4.jpg" alt="item4"/>
+                <div class="itemText">TOPS</div>
+
+            </div>
+            <div class="item5">
+                <img src="images/item5.jpg" alt="item5"/>
+                <div class="itemText">PANTS</div>
+
+            </div>
+        </div>
         <div class="footer">
             <div class="socialMedia">
                 <div class="sname">BE IN TOUCH WITH US:</div>
                 <div class="sicon">
-                    <a href="#"><img src="icons8-facebook-32.png" alt="facebook"/></a>
-                    <a href="#"><img src="icons8-twitterx-32.png" alt="twitter"/></a>
-                    <a href="#"><img src="icons8-instagram-32.png" alt="instagram"/></a>
-                    <a href="#"><img src="icons8-pinterest-32.png" alt="pinterest"/></a>
-                    <a href="#"><img src="icons8-whatsapp-32.png" alt="whatsapp"/></a>
+                    <a href="#"><img src="images/icons8-facebook-32.png" alt="facebook"/></a>
+                    <a href="#"><img src="images/icons8-twitterx-32.png" alt="twitter"/></a>
+                    <a href="#"><img src="images/icons8-instagram-32.png" alt="instagram"/></a>
+                    <a href="#"><img src="images/icons8-pinterest-32.png" alt="pinterest"/></a>
+                    <a href="#"><img src="images/icons8-whatsapp-32.png" alt="whatsapp"/></a>
                 </div>
             </div>
             <div class="fbody">
@@ -88,6 +115,7 @@
                 </div>
             </div> 
         </div>
+
         <script src="ecom.js"></script>  
     </body>
 </html>
